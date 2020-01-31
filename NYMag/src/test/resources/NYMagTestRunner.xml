@@ -21,6 +21,7 @@
             <class name="tests.NYMagTest6"/>
             <class name="tests.NYMagTest7"/>
             <class name="tests.NYMagTest8"/>
+            <class name="tests.NYMagTest9"/>
         </classes>
     </test>
 
