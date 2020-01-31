@@ -13,9 +13,7 @@
 
     <test name = "NYMag Home">
         <classes>
-<!--            <class name="home.BestBuyHome"/>-->
-            <!--            <class name="dropdownmenu.TestDropDownMenu"/>-->
-            <!--            <class name="search.TestSearch"/>-->
+            <class name="tests.NYMagTest"/>
         </classes>
     </test>
 
