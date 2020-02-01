@@ -7,48 +7,54 @@ import org.openqa.selenium.support.FindBy;
 public class HomePage extends CommonAPI {
 
 
-   @FindBy(className = "gh-p")
-   public static WebElement getDailyDeal;
+    @FindBy(className = "gh-p")
+    public static WebElement getDailyDeal;
 
-   @FindBy(id = "gh-ac")
-   public static WebElement searchBar;
+    @FindBy(id = "gh-ac")
+    public static WebElement searchBar;
 
-   @FindBy(id = "gh-btn")
-   public static WebElement searchBotton;
+    @FindBy(id = "gh-btn")
+    public static WebElement searchBotton;
 
-   @FindBy(xpath = "//*[@id=\"mainContent\"]/div[1]/ul/li[3]/a")
-   public static WebElement motorSectionHover;
+    @FindBy(xpath = "//*[@id=\"mainContent\"]/div[1]/ul/li[3]/a")
+    public static WebElement motorSectionHover;
 
-   @FindBy(className = "hl-cat-nav__js-tab")
-   public static WebElement motorSection;
+    @FindBy(className = "hl-cat-nav__js-tab")
+    public static WebElement motorSection;
 
-   @FindBy(xpath = "\"//a[@class='gh-p'][contains(text(),'Sell')]\"")
-   public static WebElement sellerPage;
+    @FindBy(xpath = "\"//a[@class='gh-p'][contains(text(),'Sell')]\"")
+    public static WebElement sellerPage;
 
-   @FindBy(linkText = "Help & Contact")
-   public static WebElement helpAndContactCenter;
+    @FindBy(linkText = "Help & Contact")
+    public static WebElement helpAndContactCenter;
 
+    @FindBy(linkText = "eBay Money Back Guarantee")
+    public static WebElement moneyBack;
 
-   @FindBy(linkText = "eBay Money Back Guarantee")
-   public static WebElement moneyBack;
+    @FindBy(xpath = "//input[@id='firstname']")
+    public static WebElement firstNmae;
 
+    @FindBy(css = "\"#lastname\"")
+    public static WebElement lastName;
 
-
-   public static WebElement getHelpAndContactCenter() {
-      return helpAndContactCenter;
-
-   }
-
-   public static WebElement getMoneyBack() {
-
-      return moneyBack;
-   }
-
-   public void clickkHelpCenter() {
-      getHelpAndContactCenter().click();
-   }
+    //@FindBy
 
 
-   }
+    public static WebElement getHelpAndContactCenter() {
+        return helpAndContactCenter;
+
+    }
+
+    public static WebElement getMoneyBack() {
+
+        return moneyBack;
+    }
+
+    public void clickkHelpCenter() {
+        getHelpAndContactCenter().click();
+    }
+
+
+}
 
 
