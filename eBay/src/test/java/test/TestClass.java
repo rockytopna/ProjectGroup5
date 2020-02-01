@@ -14,14 +14,14 @@ import java.util.List;
 public class TestClass extends CommonAPI {
 
 
-    @Test(enabled = false)
+    @Test
     public void clickDaliyDealTest1() throws InterruptedException {
         driver.findElement(By.className("gh-p")).click();
         Thread.sleep(2000);
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void iphoneSearchTest2() throws InterruptedException {
         System.out.println(driver.getTitle());
         typeOnElement("gh-ac", "iPhone");
@@ -29,26 +29,21 @@ public class TestClass extends CommonAPI {
         Thread.sleep(2000);
     }
 
-//    @Test(enabled = false)
-//    public void motoSectionMousehover() throws InterruptedException {
-//        HomePage element = PageFactory.initElements(driver, HomePage.class);
-//        element.hoveronMotor();
-//    }
 
-    @Test(enabled = false)
+    @Test
     public void motorSectonTest3() throws InterruptedException {
         driver.findElement(By.className("hl-cat-nav__js-tab")).click();
         Thread.sleep(2000);
     }
 
-    @Test(enabled = false)
+    @Test
     public void findallPartsTest4() throws InterruptedException {
         motorSectonTest3();
         clickOnElement("//a[contains(text(),'All Parts & Accessories')]");
         Thread.sleep(2000);
     }
 
-    @Test(enabled = false)
+    @Test
     public void selectCarAndTruckPartsTest5() throws InterruptedException {
         findallPartsTest4();
         clickOnElement("//div[@id='w2']//li[5]//a[1]");
@@ -56,20 +51,20 @@ public class TestClass extends CommonAPI {
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void findSignInBottonTest6() throws InterruptedException {
         clickOnElement("//a[contains(text(),'Sign in')]");
         Thread.sleep(2000);
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void sellerPageTest7() throws InterruptedException {
         driver.findElement(By.xpath("//a[@class='gh-p'][contains(text(),'Sell')]")).click();
         Thread.sleep(2000);
     }
 
-    @Test(enabled = false)
+    @Test
     public void sellerItemSearchTest8() throws InterruptedException {
         sellerPageTest7();
         typeOnElement("#smac_complete", "Books");
@@ -78,14 +73,14 @@ public class TestClass extends CommonAPI {
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void brandoutletTest9() throws InterruptedException {
         driver.findElement(By.xpath("//a[contains(text(),'Brand Outlet')]")).click();
         Thread.sleep(1000);
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void searchingmultplalitemsTest10() throws InterruptedException {
 
         System.out.println(driver.getTitle());
@@ -109,33 +104,32 @@ public class TestClass extends CommonAPI {
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void helpandContactCenterTest11() {
         HomePage element = PageFactory.initElements(driver, HomePage.class);
         HomePage.getHelpAndContactCenter().click();
     }
 
-    @Test(enabled = false)
+    @Test
     public void moneyBackTest12() {
         HomePage element = PageFactory.initElements(driver, HomePage.class);
         HomePage.getMoneyBack().click();
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void TestAntiquesTest13() {
         Antiques antiques = PageFactory.initElements(driver, Antiques.class);
         antiques.AntiquePage();
-
     }
 
-    @Test(enabled = false)
+    @Test
     public void TestAntiquesTest14() {
         Art art = PageFactory.initElements(driver, Art.class);
         art.ArtPage();
     }
 
-    @Test(enabled = false)
+    @Test
     public void BabyTest15() {
         Baby baby = PageFactory.initElements(driver, Baby.class);
         baby.BabyPage();
@@ -143,40 +137,40 @@ public class TestClass extends CommonAPI {
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void BooksTest17() {
         Books book = PageFactory.initElements(driver, Books.class);
         book.BooksPage();
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void businessAndIndustrialTest18() {
         BussinessAndIndustrial bussinessAndIndustrial = PageFactory.initElements(driver, BussinessAndIndustrial.class);
         bussinessAndIndustrial.Business();
     }
 
 
-    @Test(enabled = false)
+    @Test
     public void CameraTest19() {
         CameraAndPhoto cameraAndPhoto = PageFactory.initElements(driver, CameraAndPhoto.class);
         cameraAndPhoto.CamsPage();
     }
 
-    @Test(enabled = false)
+    @Test
     public void cellPageTest20() {
         CellPhoneAndAcc cellPhoneAndAcc = PageFactory.initElements(driver, CellPhoneAndAcc.class);
         cellPhoneAndAcc.CellPage();
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void clothAndShoesTest21() {
         ClothingPage clothingPage = PageFactory.initElements(driver, ClothingPage.class);
         clothingPage.ClothingPage();
     }
 
-    @Test(enabled = false)
+    @Test
     public void coinPageTest22() {
         CoinAndPaper coin = PageFactory.initElements(driver, CoinAndPaper.class);
         coin.coinPage();
@@ -184,72 +178,72 @@ public class TestClass extends CommonAPI {
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void collectiblesTest23() {
         CollectiblesPage collect = PageFactory.initElements(driver, CollectiblesPage.class);
         collect.collectiblePage();
     }
 
-    @Test(enabled = false)
+    @Test
     public void computerTabletPageTest24() {
         ComputerTablet computerTablet = PageFactory.initElements(driver, ComputerTablet.class);
         computerTablet.computerTabletPage();
     }
 
-    @Test(enabled = false)
+    @Test
     public void consumerElectronicsTest25() {
         ElectronicsPage electronicsPage = PageFactory.initElements(driver, ElectronicsPage.class);
         electronicsPage.electronicsPage();
     }
 
-    @Test(enabled = false)
+    @Test
     public void craftsPageTest26() {
         Crafts crafts = PageFactory.initElements(driver, Crafts.class);
         crafts.electronicsPage();
     }
 
-    @Test(enabled = false)
+    @Test
     public void dollsPageTest27() {
         DollsAndBears dollsAndBears = PageFactory.initElements(driver, DollsAndBears.class);
         dollsAndBears.dollsAndBearsPage();
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void moviePageTest28() {
         DvdandMovies dvdandMovies = PageFactory.initElements(driver, DvdandMovies.class);
         dvdandMovies.dvdMoviesPage();
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void ebayMotorTest29() {
         Motors motors = PageFactory.initElements(driver, Motors.class);
         motors.motorPage();
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void giftCardTest30() {
         GiftCardAndCoupon giftCardAndCoupon = PageFactory.initElements(driver, GiftCardAndCoupon.class);
         giftCardAndCoupon.GiftCardAndCoupon();
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void healthBeautyTest31() {
         HealthandBeauty healthandBeauty = PageFactory.initElements(driver, HealthandBeauty.class);
         healthandBeauty.healthAndBeautyPage();
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void homeGargenPageTest32() {
         HomeAndGargen homeAndGargen = PageFactory.initElements(driver, HomeAndGargen.class);
         homeAndGargen.homeAndGargen();
     }
 
-    @Test(enabled = false)
+    @Test
     public void jewelryAndWatches33() {
         JewelryAndWatches jewelryAndWatches = PageFactory.initElements(driver, JewelryAndWatches.class);
         jewelryAndWatches.jewelryAndWatches();
@@ -262,13 +256,13 @@ public class TestClass extends CommonAPI {
         music.musicPage();
     }
 
-    @Test(enabled = false)
+    @Test
     public void newTabTest34() {
         NewTab newTab = PageFactory.initElements(driver, NewTab.class);
         newTab.newWindow();
     }
 
-    @Test(enabled = false)
+    @Test
     public void musicInstrumentTest35() {
         MusicInstrument musicInstrument = PageFactory.initElements(driver, MusicInstrument.class);
         musicInstrument.musicInstrumentPage();
@@ -294,7 +288,7 @@ public class TestClass extends CommonAPI {
 
     }
 
-    @Test
+    @Test(enabled = false)
     public void sportingGoodPageTest39() {
         SportingGood sportingGood = PageFactory.initElements(driver, SportingGood.class);
         sportingGood.sportingGood();
@@ -329,7 +323,7 @@ public class TestClass extends CommonAPI {
     }
 
     @Test
-    public void travelsPage44(){
+    public void travelsPage44() {
         Travels travels = PageFactory.initElements(driver, Travels.class);
         travels.travelsPage();
     }

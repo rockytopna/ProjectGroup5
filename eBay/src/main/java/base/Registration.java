@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class Registration extends CommonAPI {
 
-    @Test(enabled = false)
+    @Test
     public void registration() throws InterruptedException {
 
         driver.get("https://reg.ebay.com/reg/PartialReg?ru=https%3A%2F%2Fwww.ebay.com%2F");

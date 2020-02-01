@@ -10,18 +10,19 @@ import org.openqa.selenium.support.PageFactory;
 
 public class NewTab extends CommonAPI {
 
-    public NewTab(){
+    public NewTab() {
         PageFactory.initElements(driver, this);
 
     }
-            public void newWindow() {
-            WebDriver driver = new ChromeDriver();
-            driver.get("https://www.ebay.com/");
-            driver.findElement(By.cssSelector("Body")).sendKeys(Keys.CONTROL + "t");
-            driver.get("https://www.ebay.com/help/home");
 
-     }
+    public void newWindow() {
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.ebay.com/");
+        driver.findElement(By.cssSelector("Body")).sendKeys(Keys.CONTROL + "t");
+        driver.get("https://www.ebay.com/help/home");
+
     }
+}
 
 
 

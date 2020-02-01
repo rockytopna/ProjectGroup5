@@ -14,7 +14,7 @@ public class Music extends CommonAPI {
 
     public void musicPage(){
 
-        driver.findElement(By.id("gh-ac")).sendKeys(" Back Street Boys ");
+        driver.findElement(By.id("gh-ac")).sendKeys("BackStreet Boys");
         Select s = new Select(driver.findElement(By.id("gh-cat")));
         s.selectByValue("11233");
         driver.findElement(By.id("gh-btn")).click();
